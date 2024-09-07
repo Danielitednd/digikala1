@@ -9,7 +9,7 @@ function HeaderOne() {
     const intervalId = setInterval(() => {
       setText(prevText => 
         prevText === 'کنار ماست panter امسال' 
-          ? 'زنگ تخفیف دیجی کالا' 
+          ? 'زنگ تخفیف دیجی کالا هرچی که جاش خالیه تا %70 تخفیف' 
           : 'کنار ماست panter امسال'
       );
     }, 1000); // Change text every 3 seconds
@@ -23,10 +23,25 @@ function HeaderOne() {
         <p className="headerp">
           {text === 'کنار ماست panter امسال' ? (
             <>
-              کنار ماست <img src={panterImage} alt="Panter" className="panter-image" />
+              امسال <img src={panterImage} alt="Panter" className="panter-image" /> کنار ماست
             </>
           ) : (
-            text
+            <>
+              زنگ تخفیف دیجی کالا <span className="red-box">هرچی که جاش خالیه</span> تا %70 تخفیف
+            </>
+          )}
+        </p>
+      </header>
+      <header className="fixed-header2">
+        <p className="headerp">
+          {text === 'کنار ماست panter امسال' ? (
+            <>
+              امسال <img src={panterImage} alt="Panter" className="panter-image" /> کنار ماست
+            </>
+          ) : (
+            <>
+              زنگ تخفیف دیجی کالا <span className="red-box">هرچی که جاش خالیه</span> تا %70 تخفیف
+            </>
           )}
         </p>
       </header>
