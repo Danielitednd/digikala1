@@ -1,0 +1,23 @@
+.fixed-header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 65px;
+    background-image: url('/spot.jpeg'); /* Path to your image */
+    background-size: cover; /* Ensures the image covers the entire header */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents repeating of the image */
+    background-blend-mode: overlay; /* Blends image with a color overlay */
+    color: white;
+    text-align: center;
+    line-height: 20px;
+    z-index: 1000;
+  }
+  .headerp{
+    font-size: 25px;
+    font-weight: bolder;
+  }
+  .panter-image {
+    height: 20px;
+    width: auto;
+  }
