@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import spotImage from './assets/spot.jpg';
-import panterImage from './assets/panter.png'; // Import the panter image
+import panterImage from './assets/panter.png';
+import digilogoImage from './assets/digilogo.png'; // Import the logo image
 
 function HeaderOne() {
   const [text, setText] = useState('کنار ماست panter امسال');
@@ -33,17 +34,16 @@ function HeaderOne() {
         </p>
       </header>
       <header className="fixed-header2">
-        <p className="headerp">
-          {text === 'کنار ماست panter امسال' ? (
-            <>
-              امسال <img src={panterImage} alt="Panter" className="panter-image" /> کنار ماست
-            </>
-          ) : (
-            <>
-              زنگ تخفیف دیجی کالا <span className="red-box">هرچی که جاش خالیه</span> تا %70 تخفیف
-            </>
-          )}
-        </p>
+            <div className="left-section">
+                <button className="header-button">Button 1</button>
+                <div className="divider"></div>
+                <button className="header-button">Button 2</button>
+            </div>
+            <div className="right-section">
+                <input type="text" className="search-input" placeholder="Search..." />
+                <div className="divider2"></div>
+                <img src={digilogoImage} alt="DigiKala Logo" className="logo-image" />
+            </div>
       </header>
     </>
   );
