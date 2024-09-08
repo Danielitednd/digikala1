@@ -109,6 +109,13 @@ function HeaderOne() {
               <img src={location} alt="Location" className="location-icon" />
             </button>
           </div>
+          <div className="right-section2">
+            {Array.from({ length: 8 }).map((_, index) => (
+              <button key={index} className="header3-button">
+                Button {index + 1}
+              </button>
+            ))}
+          </div>
         </header>
       )}
       {isModalOpen && (

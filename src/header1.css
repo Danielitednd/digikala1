@@ -37,9 +37,18 @@
     background-color: #ffffff;
     text-align: center;
     align-items: center;
-    /* line-height: 40px; */
     border-bottom: 1px solid #ccc;
     z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    transition: opacity 5s ease-in-out;
+    opacity: 1; /* Initially visible */
+    
+  }
+  .third-header.hide {
+    opacity: 0; /* Hide with transition */
+    pointer-events: none;
   }
   .headerp{
     font-size: 25px;
@@ -96,11 +105,27 @@
     border: none;
     cursor: pointer;
   }
+  .header3-buttons {
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .header3-buttons:hover {
+    background-color: #0056b3;
+  }
   .button-text {
     margin-right: 10px;
     font-size: 11px; 
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: bold;
+  }
+  .button-text {
+    margin-right: 2px;
+    font-size: 11px; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   }
   .login-icon , .location-icon{
     width: 20px; /* Adjust size of the icon */
@@ -127,6 +152,12 @@
   
   .right-section {
     display: flex;
+  }
+  .right-section2 {
+    display: flex;
+    justify-content: flex-end; /* Aligns buttons to the right */
+    gap: 5px; /* Adds space between buttons */
+    margin-right: 190px;
   }
   
   .search-wrapper {
