@@ -1,0 +1,75 @@
+.table-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1001; /* Ensure it's above other content */
+  }
+  
+  .table-container {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    position: relative;
+    width: 500px;
+    height: 600px;
+    max-width: 90%; /* Responsive width */
+    max-height: 90%; /* Responsive height */
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: #ffffff; /* Red background */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    padding: 5px 10px;
+  }
+
+  .close-icon{
+    width: 20px;
+    height: 20px;
+  }
+  
+  .table-scroll-container {
+    flex: 1;
+    overflow-y: auto;
+    margin-top: 40px; /* Space for the close button */
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  td {
+    padding: 8px;
+  }
+  
+  .option-button {
+    background-color: #ffffff;
+    color: rgb(3, 3, 3);
+    border: solid;
+    border-width: 1px;
+    border-color: rgb(194, 194, 194);
+    border-radius: 4px;
+    padding: 10px;
+    cursor: pointer;
+    width: 100%;
+    text-align: left;
+  }
+  
+  .option-button:hover {
+    background-color: #0056b3;
+  }
+  
