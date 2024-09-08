@@ -1,0 +1,43 @@
+.carousel-container {
+    position: relative;
+    width: 100%;
+    margin: auto;
+  }
+  .carousel-wrapper {
+    display: flex;
+    flex-direction: row;
+    transition: transform 0.5s ease-in-out; /* Smooth transition for flip effect */
+    width: 400%; /* Number of images * 100% */
+  }
+
+  .carousel-image {
+    width: 100%;
+    margin-top: 190px;
+  }
+  
+  .dots-container {
+    position: absolute;
+    bottom: 20px; /* Adjusts the distance from the bottom of the image */
+    left: 50%;
+    transform: translateX(-50%); /* Centers the dots horizontally */
+    display: flex;
+    gap: 5px; /* Adjust the spacing between dots */
+  }
+  
+  .dot {
+    height: 4px;
+    width: 4px;
+    background-color: rgb(213, 213, 213);
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+  }
+  
+  .dot.active {
+    transition: 0.5s;
+    height: 4px;
+    width: 13px;
+    border-radius: 20px;
+    background-color: white;
+  }
+  
