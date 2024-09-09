@@ -7,6 +7,7 @@ import PopupAlert from './alert';
 import HeaderOne from './header1';
 import Pics from './pics';
 import PictureGrid from './butPics';
+import SpecialOffers from './specialoffers';
 
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
       <HeaderOne />
       <Pics />
       <PictureGrid/>
+      <SpecialOffers/>
     </>
   );
 }

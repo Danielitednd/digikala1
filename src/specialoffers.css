@@ -1,0 +1,114 @@
+.special-offers-container {
+    background-color: #ef394e;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin: 30px auto;
+    width: 67%; 
+    border-radius: 10px;
+    height: 220px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.offers-list p {
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+.countdown-button {
+    background-color: #ef394e;
+    color: rgb(255, 255, 255);
+    border: none;
+    height: 230px;
+    width: 130px;
+    margin-right: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.countdown-top {
+    font-size: 22px;
+    margin-bottom: 0;
+    margin-top: 0;
+    font-family: 'IRANYekan', sans-serif;
+    font-weight: bolder;
+}
+
+.countdown-bottom {
+    font-size: 50px;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-weight: bolder;
+}
+
+.countdown-bottom2 {
+    font-size: 17px;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+.countdown-timer {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.time-box {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(69, 69, 69);
+    text-align: center;
+    line-height: 25px;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bolder;
+    margin: 0 2px;
+}
+
+/* Horizontal Scroll Section */
+/* Horizontal Scroll Section */
+.offers-scroll {
+    display: flex;
+    gap: 10px;
+    overflow-y: auto;  /* Enables horizontal scrolling */
+    white-space: nowrap;  /* Prevents wrapping to new lines */
+    padding-bottom: 10px; /* Optional: Adds space below buttons */
+}
+
+/* Optional to hide scrollbar if you want a cleaner look */
+.offers-scroll::-webkit-scrollbar {
+    display: none;
+}
+
+.offer-button {
+    width: 160px;
+    height: 230px;
+    background-color: #ef394e;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    padding: 10px;
+    color: white;
+    cursor: pointer;
+    flex: 0 0 auto; /* Ensure buttons don't shrink */
+}
+
+.offer-image {
+    width: 55px;
+    height: 55px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.offer-line {
+    font-size: 14px;
+    margin: 2px 0;
+}
+
