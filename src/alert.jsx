@@ -12,8 +12,8 @@ function PopupAlert(){
       {showAlert && (
         <div className="custom-alert">
           <div className="alert-content">
-            <h2 className="alertp">حاجی به شرفت تخفیف داریم دروغ نمیگم</h2>
-            <button onClick={handleClose} className="close-btn">گوه خوردی</button>
+            <h2 className="alertp">حاجی تخفیف داریم دروغ نمیگم</h2>
+            <button onClick={handleClose} className="close-btn">دروغ میگی</button>
           </div>
         </div>
       )}

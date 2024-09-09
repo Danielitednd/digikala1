@@ -3,10 +3,12 @@ import hello from './assets/hello.webp';
 import pic2 from './assets/pic2.webp';
 import pic3 from './assets/pic3.webp';
 import pic4 from './assets/pic4.webp';
+import pic5 from './assets/pic5.webp';
 import './pics.css';
 
+
 function Pics() {
-  const pictures = [hello, pic2, pic3, pic4];
+  const pictures = [hello, pic2, pic3, pic4, pic5];
   const [currentPic, setCurrentPic] = useState(0);
 
   useEffect(() => {
@@ -14,8 +16,15 @@ function Pics() {
       setCurrentPic(prevPic => (prevPic + 1) % pictures.length);
     }, 4000);
 
-    return () => clearInterval(interval); // Cleanup the interval on component unmount
+    return () => clearInterval(interval);
   }, [pictures.length]);
+  const goToNext = () => {
+    setCurrentPic((prevPic) => (prevPic + 1) % pictures.length);
+  };
+
+  const goToPrev = () => {
+    setCurrentPic((prevPic) => (prevPic - 1 + pictures.length) % pictures.length);
+  };
 
   return (
     <div className="carousel-container">
@@ -27,6 +36,10 @@ function Pics() {
             className={`dot ${currentPic === index ? 'active' : ''}`}
           ></span>
         ))}
+      </div>
+      <div className="button-container">
+        <button className="prev-button" onClick={goToPrev}>&lt;</button>
+        <button className="next-button" onClick={goToNext}>&gt;</button>
       </div>
     </div>
   );

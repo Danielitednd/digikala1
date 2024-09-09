@@ -41,10 +41,9 @@
     z-index: 1000;
     display: flex;
     justify-content: space-between;
-    padding: 10px;
+    padding: 1px;
     transition: opacity 5s ease-in-out;
-    opacity: 1; /* Initially visible */
-    
+    opacity: 1;
   }
   .third-header.hide {
     opacity: 0; /* Hide with transition */
@@ -131,11 +130,7 @@
     width: 20px; /* Adjust size of the icon */
     height: auto;
   }
-  
-  /* .header-button:hover {
-    background-color: #0056b3;
-  } */
-  
+
   .divider {
     width: 2px;
     height: 30px;

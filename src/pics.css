@@ -1,43 +1,66 @@
 .carousel-container {
-    position: relative;
-    width: 100%;
-    margin: auto;
-  }
-  .carousel-wrapper {
-    display: flex;
-    flex-direction: row;
-    transition: transform 0.5s ease-in-out; /* Smooth transition for flip effect */
-    width: 400%; /* Number of images * 100% */
-  }
+  position: relative;
+  width: 100%;
+  margin: auto;
+}
 
-  .carousel-image {
-    width: 100%;
-    margin-top: 190px;
-  }
-  
-  .dots-container {
-    position: absolute;
-    bottom: 20px; /* Adjusts the distance from the bottom of the image */
-    left: 50%;
-    transform: translateX(-50%); /* Centers the dots horizontally */
-    display: flex;
-    gap: 5px; /* Adjust the spacing between dots */
-  }
-  
-  .dot {
-    height: 4px;
-    width: 4px;
-    background-color: rgb(213, 213, 213);
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.3s ease;
-  }
-  
-  .dot.active {
-    transition: 0.5s;
-    height: 4px;
-    width: 13px;
-    border-radius: 20px;
-    background-color: white;
-  }
-  
+.carousel-image {
+  width: 100%;
+  margin-top: 190px;
+}
+
+.dots-container {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 5px;
+}
+
+.dot {
+  height: 4px;
+  width: 4px;
+  background-color: rgb(213, 213, 213);
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+}
+
+.dot.active {
+  transition: 0.5s;
+  height: 4px;
+  width: 13px;
+  border-radius: 20px;
+  background-color: white;
+}
+
+.button-container {
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+  display: flex;
+  gap: 10px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.carousel-container:hover .button-container {
+  opacity: 1;
+}
+
+.prev-button, .next-button {
+  background-color: rgba(0, 0, 0, 0.5); 
+  border: none;
+  color: white;
+  padding: 10px;
+  width: 45px;
+  height: 45px;
+  font-size: 20px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.prev-button:hover, .next-button:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}

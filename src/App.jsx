@@ -6,6 +6,7 @@ import React from 'react';
 import PopupAlert from './alert';
 import HeaderOne from './header1';
 import Pics from './pics';
+import PictureGrid from './butPics';
 
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
       <PopupAlert />
       <HeaderOne />
       <Pics />
+      <PictureGrid/>
     </>
   );
 }
