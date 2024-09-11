@@ -1,12 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import TableModal from './tableModal';
-import spotImage from './assets/spot.jpg';
-import panterImage from './assets/panter.png';
+// import spotImage from './assets/spot.jpg';
+// import panterImage from './assets/panter.png';
 import digilogoImage from './assets/digilogo.png'; // Import the logo image
 import magnifier from './assets/magnifier.png';
 import bbasket from './assets/bbasket.png';
 import login from './assets/login.png';
 import location from './assets/location.png';
+import gif2 from './assets/gif2.gif';
 
 function HeaderOne() {
   const [text, setText] = useState('کنار ماست panter امسال');
@@ -60,8 +61,9 @@ function HeaderOne() {
 
   return (
     <>
-      <header className="fixed-header" style={{ backgroundImage: `url(${spotImage})` }}>
-        <p className="headerp">
+      <header className="fixed-header" >
+        {/*style={{ backgroundImage: `url(${spotImage})` }}*/}
+        {/* <p className="headerp">
           {text === 'کنار ماست panter امسال' ? (
             <>
               امسال <img src={panterImage} alt="Panter" className="panter-image" /> کنار ماست
@@ -71,7 +73,8 @@ function HeaderOne() {
               زنگ تخفیف دیجی کالا <span className="red-box">هرچی که جاش خالیه</span> تا %70 تخفیف
             </>
           )}
-        </p>
+        </p> */}
+        <img src={gif2} alt="gif2" className="gif2-icon" />
       </header>
 
       <header className="fixed-header2">
@@ -105,7 +108,7 @@ function HeaderOne() {
         <header className="third-header">
           <div className="left-section">
             <button className="header3-button" onClick={handleButtonClick}>
-              <span className="button-text">لطفا شهر خود را انتخاب کنید</span>
+              <span className="button-text2">لطفا شهر خود را انتخاب کنید</span>
               <img src={location} alt="Location" className="location-icon" />
             </button>
           </div>

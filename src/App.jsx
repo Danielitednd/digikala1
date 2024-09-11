@@ -7,8 +7,10 @@ import PopupAlert from './alert';
 import HeaderOne from './header1';
 import Pics from './pics';
 import PictureGrid from './butPics';
+import PictureGrid2 from './butpics2';
 import SpecialOffers from './specialoffers';
-
+import FixedButtons from './fixedbut';
+import Buttons from './buttons';
 
 function App() {
   return (
@@ -18,6 +20,10 @@ function App() {
       <Pics />
       <PictureGrid/>
       <SpecialOffers/>
+      <FixedButtons/>
+      <Buttons />
+      <p className='daste'>خرید براساس دسته بندی</p>
+      <PictureGrid2/>
     </>
   );
 }

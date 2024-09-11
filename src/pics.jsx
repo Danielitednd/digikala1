@@ -5,10 +5,11 @@ import pic3 from './assets/pic3.webp';
 import pic4 from './assets/pic4.webp';
 import pic5 from './assets/pic5.webp';
 import './pics.css';
+import gif from './assets/gif.gif'; 
 
 
 function Pics() {
-  const pictures = [hello, pic2, pic3, pic4, pic5];
+  const pictures = [hello, pic2, pic3, pic4, pic5, gif];
   const [currentPic, setCurrentPic] = useState(0);
 
   useEffect(() => {
